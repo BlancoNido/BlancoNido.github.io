@@ -1,0 +1,159 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sueño Suave | Sábanas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #faf7f5;
+      color: #2b2b2b;
+    }
+    header {
+      background: linear-gradient(135deg, #cbb4d4, #f3d1dc);
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    nav a {
+      text-decoration: none;
+      color: #6b4e71;
+      font-weight: 500;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+    }
+    .card h3 {
+      margin: 15px 0 5px;
+    }
+    .card p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+    .cta {
+      background: #6b4e71;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 30px;
+    }
+    .cta h2 {
+      margin-bottom: 10px;
+    }
+    form {
+      max-width: 500px;
+      margin: 30px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea, button {
+      padding: 12px 15px;
+      border-radius: 10px;
+      border: none;
+      font-size: 1rem;
+    }
+    input, textarea {
+      outline: none;
+    }
+    button {
+      background: #f3d1dc;
+      color: #2b2b2b;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body><header>
+  <h1>Sueño Suave</h1>
+  <p>Sábanas que abrazan tus sueños</p>
+</header><nav>
+  <a href="#productos">Productos</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#contacto">Contacto</a>
+</nav><section id="productos">
+  <h2>Nuestras Sábanas</h2>
+  <div class="productos">
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Sábana individual">
+      <h3>Individual</h3>
+      <p>Suave, fresca y perfecta para el descanso diario.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Sábana matrimonial">
+      <h3>Matrimonial</h3>
+      <p>Elegancia y comodidad para compartir.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Sábana Queen">
+      <h3>Queen</h3>
+      <p>Espacio y suavidad premium.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Sábana King">
+      <h3>King</h3>
+      <p>Lujo total para un descanso profundo.</p>
+    </div>
+  </div>
+</section><section id="nosotros">
+  <h2>Sobre Nosotros</h2>
+  <p>En Sueño Suave creemos que dormir bien es un acto de amor propio. Nuestras sábanas están pensadas para brindar confort, estética y calidad en cada hilo.</p>
+</section><section id="contacto" class="cta">
+  <h2>¿Te interesa comprar?</h2>
+  <p>Déjanos tus datos y te contactamos por WhatsApp o Facebook</p>
+  <form>
+    <input type="text" placeholder="Nombre" required />
+    <input type="email" placeholder="Correo" required />
+    <input type="tel" placeholder="Teléfono / WhatsApp" />
+    <textarea placeholder="¿Qué tamaño te interesa?"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section><footer>
+  © 2025 Sueño Suave · Todos los derechos reservados
+</footer></body>
+</html>
