@@ -1,7 +1,7 @@
-/* ===== ESTILO GENERAL ===== */
+/* ===== GENERAL ===== */
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   background: #faf7f5;
   color: #2b2b2b;
 }
@@ -9,7 +9,7 @@ body {
 /* ===== HEADER ===== */
 header {
   background: linear-gradient(135deg, #cbb4d4, #f3d1dc);
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
@@ -30,7 +30,7 @@ nav {
   justify-content: center;
   gap: 25px;
   padding: 15px;
-  background: #fff;
+  background: #ffffff;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
@@ -60,7 +60,7 @@ section h2 {
 }
 
 .card {
-  background: #fff;
+  background: #ffffff;
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
@@ -69,7 +69,7 @@ section h2 {
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
 .card img {
@@ -89,7 +89,7 @@ section h2 {
 /* ===== CONTACTO ===== */
 .cta {
   background: #6b4e71;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   border-radius: 30px;
 }
@@ -102,7 +102,9 @@ form {
   gap: 15px;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
   padding: 12px 15px;
   border-radius: 10px;
   border: none;
@@ -116,10 +118,21 @@ button {
   font-weight: 600;
 }
 
+button:hover {
+  opacity: 0.9;
+}
+
 /* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 20px;
   font-size: 0.85rem;
   opacity: 0.7;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
 }
