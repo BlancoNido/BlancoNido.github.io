@@ -1,202 +1,165 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blanco Nido</title>
 
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Cormorant+Garamond:wght@300;500&display=swap" rel="stylesheet">
+
 <style>
-:root{
-  --beige:#f6f3ee;
-  --hueso:#faf9f7;
-  --arena:#e6dfd6;
-  --taupe:#7a6f66;
-  --oscuro:#2f2f2f;
-}
-
-*{
-  box-sizing:border-box;
-}
-
-body{
-  margin:0;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background:var(--beige);
-  color:var(--oscuro);
-  line-height:1.6;
-}
-
-/* HEADER */
-header{
-  background:var(--hueso);
-  padding:90px 20px;
-  text-align:center;
-}
-
-header h1{
-  margin:0;
-  font-size:3rem;
-  letter-spacing:2px;
-  font-weight:300;
-}
-
-header p{
-  margin-top:15px;
-  font-size:1rem;
-  color:var(--taupe);
-}
-
-/* NAV */
-nav{
-  display:flex;
-  justify-content:center;
-  gap:40px;
-  padding:25px 0;
-  background:var(--hueso);
-}
-
-nav a{
-  text-decoration:none;
-  color:var(--taupe);
-  font-size:0.9rem;
-  letter-spacing:1px;
-}
-
-/* SECCIONES */
-section{
-  max-width:1100px;
-  margin:auto;
-  padding:100px 20px;
-}
-
-section h2{
-  text-align:center;
-  font-weight:300;
-  font-size:2rem;
-  margin-bottom:60px;
-}
-
-/* PRODUCTOS */
-.productos{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:50px;
-}
-
-.card{
-  background:var(--hueso);
-  border-radius:30px;
-  padding:30px;
-  text-align:center;
-}
-
-.card img{
-  width:100%;
-  border-radius:20px;
-  margin-bottom:20px;
-}
-
-.card h3{
-  font-weight:400;
-  margin:10px 0;
-}
-
-.card p{
-  font-size:0.9rem;
-  color:var(--taupe);
-}
-
-/* NOSOTROS */
-#nosotros p{
-  max-width:700px;
-  margin:auto;
-  text-align:center;
-  color:var(--taupe);
-}
-
-/* CONTACTO */
-.cta{
-  background:var(--arena);
-  border-radius:40px;
-  padding:80px 20px;
-}
-
-form{
-  max-width:450px;
-  margin:40px auto 0;
-  display:flex;
-  flex-direction:column;
-  gap:20px;
-}
-
-input,textarea{
-  padding:14px 18px;
-  border:none;
-  border-radius:15px;
-  background:var(--hueso);
-  font-size:0.9rem;
-}
-
-button{
-  background:var(--oscuro);
-  color:white;
-  border:none;
-  padding:14px;
-  border-radius:30px;
-  font-size:0.9rem;
-  letter-spacing:1px;
-  cursor:pointer;
-}
-
-/* FOOTER */
-footer{
-  text-align:center;
-  padding:40px 20px;
-  font-size:0.8rem;
-  color:var(--taupe);
-}
+  :root {
+    --oscuro: #1A1A1A;
+    --gris: #2F2F2F;
+    --burdeos: #5D2E3A;
+    --hueso: #F4F1EC;
+    --plateado: #C1BEB8;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Cormorant Garamond', serif;
+    background: var(--hueso);
+    color: var(--gris);
+  }
+  header {
+    padding: 100px 20px;
+    text-align: center;
+    background: var(--gris);
+    color: var(--hueso);
+  }
+  header h1 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+  header p {
+    margin-top: 12px;
+    font-size: 1.2rem;
+    color: var(--plateado);
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: var(--oscuro);
+    padding: 20px 0;
+  }
+  nav a {
+    text-decoration: none;
+    color: var(--hueso);
+    font-weight: 500;
+  }
+  section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  section h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--oscuro);
+    margin-bottom: 40px;
+  }
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap: 40px;
+    margin-top: 30px;
+  }
+  .card {
+    background: var(--hueso);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  .card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 18px;
+  }
+  .card h3 {
+    font-size: 1.4rem;
+    margin: 12px 0 6px;
+    color: var(--burdeos);
+  }
+  .card p {
+    font-size: 0.95rem;
+    color: var(--gris);
+  }
+  .cta {
+    background: var(--burdeos);
+    color: var(--hueso);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 40px;
+  }
+  .cta input,
+  .cta textarea,
+  .cta button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+  }
+  .cta button {
+    background: var(--oscuro);
+    color: var(--hueso);
+    cursor: pointer;
+  }
+  footer {
+    text-align: center;
+    padding: 25px;
+    color: var(--plateado);
+    font-size: 0.85rem;
+  }
 </style>
+
 </head>
 
 <body>
 
 <header>
   <h1>Blanco Nido</h1>
-  <p>Sábanas premium para un descanso sereno</p>
+  <p>Dónde el descanso se encuentra con misterio y delicadeza</p>
 </header>
 
 <nav>
-  <a href="#productos">PRODUCTOS</a>
-  <a href="#nosotros">NOSOTROS</a>
-  <a href="#contacto">CONTACTO</a>
+  <a href="#productos">Productos</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#contacto">Contacto</a>
 </nav>
 
 <section id="productos">
   <h2>Nuestras Sábanas</h2>
-
   <div class="productos">
     <div class="card">
-      <img src="https://via.placeholder.com/400x300">
+      <img src="https://via.placeholder.com/400x300" alt="Sábana Individual">
       <h3>Individual</h3>
-      <p>Ligereza y suavidad para el descanso diario.</p>
+      <p>Confeccionada con elegancia y suavidad para tu descanso diario.</p>
     </div>
-
     <div class="card">
-      <img src="https://via.placeholder.com/400x300">
+      <img src="https://via.placeholder.com/400x300" alt="Sábana Matrimonial">
       <h3>Matrimonial</h3>
-      <p>Confort equilibrado y elegante.</p>
+      <p>Un equilibrio perfecto entre estética y confort.</p>
     </div>
-
     <div class="card">
-      <img src="https://via.placeholder.com/400x300">
+      <img src="https://via.placeholder.com/400x300" alt="Sábana Queen">
       <h3>Queen</h3>
-      <p>Amplitud y textura premium.</p>
+      <p>Diseño premium para espacios amplios y delicados.</p>
     </div>
-
     <div class="card">
-      <img src="https://via.placeholder.com/400x300">
+      <img src="https://via.placeholder.com/400x300" alt="Sábana King">
       <h3>King</h3>
-      <p>Lujo silencioso para dormir profundo.</p>
+      <p>Lujo sereno para un descanso profundo y elegante.</p>
     </div>
   </div>
 </section>
@@ -204,22 +167,19 @@ footer{
 <section id="nosotros">
   <h2>Sobre Blanco Nido</h2>
   <p>
-    Blanco Nido nace de la idea de que descansar bien
-    no es un lujo, sino un ritual. Diseñamos sábanas
-    con estética limpia, tonos suaves y calidad honesta.
+    Nacimos con la intención de unir elegancia y textura, creando sábanas
+    que evocan sensaciones profundas y estéticas, sin renunciar al confort.
   </p>
 </section>
 
 <section id="contacto" class="cta">
-  <h2>Contacto</h2>
-
-  <form>
-    <input type="text" placeholder="Nombre">
-    <input type="email" placeholder="Correo">
-    <input type="tel" placeholder="WhatsApp">
-    <textarea placeholder="¿Qué tamaño te interesa?"></textarea>
-    <button>ENVIAR</button>
-  </form>
+  <h2>¿Te interesa?</h2>
+  <p>Déjanos tus datos y te contactamos por WhatsApp o Facebook</p>
+  <input type="text" placeholder="Nombre">
+  <input type="email" placeholder="Correo">
+  <input type="tel" placeholder="WhatsApp">
+  <textarea placeholder="¿Qué tamaño te interesa?"></textarea>
+  <button>Enviar</button>
 </section>
 
 <footer>
