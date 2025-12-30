@@ -14,7 +14,7 @@
   --mocha: #5A4D41;
   --chai: #7E6957;
   --roast: #867C70;
-  --fondo: #f3efe9;
+  --fondo: #f6f2ec;
 }
 
 body {
@@ -24,44 +24,46 @@ body {
   color: var(--americano);
 }
 
+/* HERO */
 .hero {
   padding: 90px 20px;
   text-align: center;
-  background: linear-gradient(135deg, var(--roast), var(--fondo));
+  background: linear-gradient(135deg, var(--roast), #d9d2c8);
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   margin-bottom: 10px;
-  color: var(--americano);
 }
 
 .subtitulo {
   font-size: 1.1rem;
-  opacity: 0.85;
+  color: var(--brew);
 }
 
+/* MENU */
 .menu {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 20px;
-  background: var(--roast);
+  padding: 18px;
+  background: var(--americano);
 }
 
 .menu a {
   text-decoration: none;
-  color: white;
+  color: #f2ede6;
   font-weight: 500;
 }
 
 .menu a:hover {
-  color: #f3efe9;
+  color: var(--roast);
 }
 
+/* SECCIONES */
 section {
-  padding: 70px 20px;
+  padding: 80px 20px;
   max-width: 1100px;
   margin: auto;
 }
@@ -74,6 +76,7 @@ section h2 {
   color: var(--mocha);
 }
 
+/* CATALOGO */
 .categorias {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -81,9 +84,8 @@ section h2 {
 }
 
 .categoria {
-  background: #e6e0d8;
-  border-radius: 18px;
-  padding: 30px;
+  border-radius: 22px;
+  padding: 35px;
   text-align: center;
   text-decoration: none;
   color: var(--americano);
@@ -91,29 +93,47 @@ section h2 {
 }
 
 .categoria:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.18);
 }
 
 .categoria h3 {
   font-family: 'Playfair Display', serif;
-  margin-bottom: 10px;
   color: var(--brew);
 }
 
-.bloque-suave {
-  background: #e0d9cf;
-  border-radius: 25px;
-  padding: 60px 40px;
+/* COLORES POR TAMAÑO */
+.categoria.individual {
+  background: #f4efe8;
 }
 
+.categoria.matrimonial {
+  background: #e9e2d8;
+}
+
+.categoria.queen {
+  background: #ded5c9;
+}
+
+.categoria.king {
+  background: #d2c8bb;
+}
+
+/* BLOQUES SUAVES */
+.bloque-suave {
+  background: #d8cfc2;
+  border-radius: 30px;
+  padding: 70px 45px;
+}
+
+/* CONTACTO */
 .contacto {
   text-align: center;
 }
 
 form {
   max-width: 450px;
-  margin: 30px auto 0;
+  margin: 35px auto 0;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -121,17 +141,17 @@ form {
 
 input, select {
   padding: 14px;
-  border-radius: 10px;
-  border: none;
+  border-radius: 12px;
+  border: 1px solid #ccc;
   font-size: 1rem;
-  background: white;
 }
 
+/* BOTONES */
 button {
-  background: var(--brew);
+  background: var(--mocha);
   color: white;
   border: none;
-  padding: 14px;
+  padding: 15px;
   border-radius: 30px;
   font-size: 1rem;
   cursor: pointer;
@@ -142,12 +162,13 @@ button:hover {
   background: var(--chai);
 }
 
+/* FOOTER */
 footer {
-  text-align: center;
-  padding: 25px;
-  font-size: 0.85rem;
   background: var(--americano);
-  color: #d6d0c7;
+  color: #d7d1c7;
+  text-align: center;
+  padding: 30px;
+  font-size: 0.85rem;
 }
 </style>
 </head>
@@ -171,22 +192,22 @@ footer {
   <h2>Lo que tenemos para ti</h2>
 
   <div class="categorias">
-    <a href="individual.html" class="categoria">
+    <a href="individual.html" class="categoria individual">
       <h3>Individual</h3>
       <p>Prácticas, suaves y ligeras.</p>
     </a>
 
-    <a href="matrimonial.html" class="categoria">
+    <a href="matrimonial.html" class="categoria matrimonial">
       <h3>Matrimonial</h3>
       <p>Comodidad equilibrada.</p>
     </a>
 
-    <a href="queen.html" class="categoria">
+    <a href="queen.html" class="categoria queen">
       <h3>Queen</h3>
       <p>Más espacio para descansar.</p>
     </a>
 
-    <a href="king.html" class="categoria">
+    <a href="king.html" class="categoria king">
       <h3>King</h3>
       <p>Amplitud total.</p>
     </a>
