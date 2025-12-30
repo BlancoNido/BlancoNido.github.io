@@ -7,6 +7,11 @@
   --fondo: #f6f2ec;
 }
 
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -74,8 +79,7 @@ section h2 {
 }
 
 .categoria {
-  background: #f1ece6;
-  border-radius: 20px;
+  border-radius: 22px;
   padding: 35px;
   text-align: center;
   text-decoration: none;
@@ -93,9 +97,26 @@ section h2 {
   color: var(--brew);
 }
 
+/* COLORES POR TAMAÑO */
+.categoria.individual {
+  background: #f4efe8;
+}
+
+.categoria.matrimonial {
+  background: #e9e2d8;
+}
+
+.categoria.queen {
+  background: #ded5c9;
+}
+
+.categoria.king {
+  background: #d2c8bb;
+}
+
 /* BLOQUES SUAVES */
 .bloque-suave {
-  background: #e5ded4;
+  background: #d8cfc2;
   border-radius: 30px;
   padding: 70px 45px;
 }
