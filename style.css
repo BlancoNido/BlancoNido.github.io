@@ -5,6 +5,7 @@
   --chai: #7E6957;
   --roast: #867C70;
   --fondo: #f6f2ec;
+  --beige-claro: #f3efe9;
 }
 
 /* RESET */
@@ -23,17 +24,15 @@ body {
 .hero {
   padding: 90px 20px;
   text-align: center;
-  background: linear-gradient(135deg, var(--roast), #d9d2c8);
+  background: linear-gradient(135deg, var(--roast), var(--beige-claro));
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
-  margin-bottom: 10px;
 }
 
 .subtitulo {
-  font-size: 1.1rem;
   color: var(--brew);
 }
 
@@ -47,9 +46,8 @@ body {
 }
 
 .menu a {
-  text-decoration: none;
   color: #f2ede6;
-  font-weight: 500;
+  text-decoration: none;
 }
 
 .menu a:hover {
@@ -64,10 +62,8 @@ section {
 }
 
 section h2 {
-  text-align: center;
   font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
-  margin-bottom: 40px;
+  text-align: center;
   color: var(--mocha);
 }
 
@@ -79,53 +75,56 @@ section h2 {
 }
 
 .categoria {
-  border-radius: 22px;
   padding: 35px;
+  border-radius: 22px;
   text-align: center;
-  text-decoration: none;
   color: var(--americano);
-  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  transition: transform .3s, box-shadow .3s;
 }
 
 .categoria:hover {
   transform: translateY(-8px);
-  box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+  box-shadow: 0 18px 35px rgba(0,0,0,.18);
 }
 
 .categoria h3 {
   font-family: 'Playfair Display', serif;
-  color: var(--brew);
 }
 
-/* COLORES POR TAMAÑO */
+/* COLORES COMBINADOS */
 .categoria.individual {
-  background: #f4efe8;
+  background: var(--beige-claro);
 }
 
 .categoria.matrimonial {
-  background: #e9e2d8;
+  background: #e0d6ca; /* roast claro */
 }
 
 .categoria.queen {
-  background: #ded5c9;
+  background: #d3c1af; /* chai suave */
 }
 
 .categoria.king {
-  background: #d2c8bb;
+  background: #c3b2a3; /* mocha claro */
 }
 
-/* BLOQUES SUAVES */
+/* BLOQUES */
 .bloque-suave {
-  background: #d8cfc2;
   border-radius: 30px;
   padding: 70px 45px;
 }
 
-/* CONTACTO */
+.nosotros {
+  background: #d8cfc2;
+}
+
 .contacto {
+  background: #e6ded3;
   text-align: center;
 }
 
+/* FORM */
 form {
   max-width: 450px;
   margin: 35px auto 0;
@@ -138,19 +137,16 @@ input, select {
   padding: 14px;
   border-radius: 12px;
   border: 1px solid #ccc;
-  font-size: 1rem;
 }
 
-/* BOTONES */
+/* BOTON */
 button {
   background: var(--mocha);
   color: white;
   border: none;
   padding: 15px;
   border-radius: 30px;
-  font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
 button:hover {
@@ -163,5 +159,4 @@ footer {
   color: #d7d1c7;
   text-align: center;
   padding: 30px;
-  font-size: 0.85rem;
 }
