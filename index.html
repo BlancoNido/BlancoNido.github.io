@@ -6,171 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-<style>
-:root {
-  --americano: #1E1D1D;
-  --brew: #303031;
-  --mocha: #5A4D41;
-  --chai: #7E6957;
-  --roast: #867C70;
-  --fondo: #f6f2ec;
-}
-
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: var(--fondo);
-  color: var(--americano);
-}
-
-/* HERO */
-.hero {
-  padding: 90px 20px;
-  text-align: center;
-  background: linear-gradient(135deg, var(--roast), #d9d2c8);
-}
-
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.subtitulo {
-  font-size: 1.1rem;
-  color: var(--brew);
-}
-
-/* MENU */
-.menu {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 18px;
-  background: var(--americano);
-}
-
-.menu a {
-  text-decoration: none;
-  color: #f2ede6;
-  font-weight: 500;
-}
-
-.menu a:hover {
-  color: var(--roast);
-}
-
-/* SECCIONES */
-section {
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-section h2 {
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
-  margin-bottom: 40px;
-  color: var(--mocha);
-}
-
-/* CATALOGO */
-.categorias {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-}
-
-.categoria {
-  border-radius: 22px;
-  padding: 35px;
-  text-align: center;
-  text-decoration: none;
-  color: var(--americano);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.categoria:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 35px rgba(0,0,0,0.18);
-}
-
-.categoria h3 {
-  font-family: 'Playfair Display', serif;
-  color: var(--brew);
-}
-
-/* COLORES POR TAMAÑO */
-.categoria.individual {
-  background: #f4efe8;
-}
-
-.categoria.matrimonial {
-  background: #e9e2d8;
-}
-
-.categoria.queen {
-  background: #ded5c9;
-}
-
-.categoria.king {
-  background: #d2c8bb;
-}
-
-/* BLOQUES SUAVES */
-.bloque-suave {
-  background: #d8cfc2;
-  border-radius: 30px;
-  padding: 70px 45px;
-}
-
-/* CONTACTO */
-.contacto {
-  text-align: center;
-}
-
-form {
-  max-width: 450px;
-  margin: 35px auto 0;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-input, select {
-  padding: 14px;
-  border-radius: 12px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-}
-
-/* BOTONES */
-button {
-  background: var(--mocha);
-  color: white;
-  border: none;
-  padding: 15px;
-  border-radius: 30px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background: var(--chai);
-}
-
-/* FOOTER */
-footer {
-  background: var(--americano);
-  color: #d7d1c7;
-  text-align: center;
-  padding: 30px;
-  font-size: 0.85rem;
-}
-</style>
+<link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
@@ -214,7 +50,7 @@ footer {
   </div>
 </section>
 
-<section id="nosotros" class="bloque-suave">
+<section id="nosotros" class="bloque-suave nosotros">
   <h2>Sobre Blanco Nido</h2>
   <p>
     En Blanco Nido creamos sábanas pensadas para el uso diario:
@@ -222,7 +58,7 @@ footer {
   </p>
 </section>
 
-<section id="contacto" class="contacto bloque-suave">
+<section id="contacto" class="bloque-suave contacto">
   <h2>¿Te interesa comprar?</h2>
   <p>
     Déjanos tus datos y te contactamos por
