@@ -64,7 +64,7 @@ section h2 {
   padding: 35px;
   text-align: center;
   text-decoration: none;
-  color: inherit;
+  color: #2B2B2B;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -78,16 +78,20 @@ section h2 {
   margin-bottom: 10px;
 }
 
-/* TONOS SUAVES */
-.categoria.clara {
+/* COLORES DIFERENCIADOS (MISMA GAMA) */
+.categoria.individual {
   background: #EFEAE4;
 }
 
-.categoria.media {
+.categoria.matrimonial {
   background: #DED5CB;
 }
 
-.categoria.oscura {
+.categoria.queen {
+  background: #D6CCBF;
+}
+
+.categoria.king {
   background: #CFC4B8;
 }
 
