@@ -16,7 +16,7 @@ body {
 }
 
 .hero {
-  padding: 80px 20px;
+  padding: 90px 20px;
   text-align: center;
   background: linear-gradient(135deg, #e6dfd6, #f4f1ed);
 }
@@ -56,7 +56,7 @@ section h2 {
   text-align: center;
   font-family: 'Playfair Display', serif;
   font-size: 2.2rem;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .categorias {
@@ -103,11 +103,12 @@ form {
   gap: 15px;
 }
 
-input, textarea {
+input, textarea, select {
   padding: 14px;
   border-radius: 10px;
   border: none;
   font-size: 1rem;
+  background: white;
 }
 
 button {
@@ -118,6 +119,10 @@ button {
   border-radius: 30px;
   font-size: 1rem;
   cursor: pointer;
+}
+
+button:hover {
+  background: #6a5f57;
 }
 
 footer {
@@ -133,7 +138,9 @@ footer {
 
 <header class="hero">
   <h1>Blanco Nido</h1>
-  <p class="subtitulo">Sábanas cómodas, funcionales y pensadas para descansar mejor.</p>
+  <p class="subtitulo">
+    Sábanas cómodas, funcionales y pensadas para descansar mejor.
+  </p>
 </header>
 
 <nav class="menu">
@@ -171,20 +178,34 @@ footer {
 <section id="nosotros" class="bloque-suave">
   <h2>Sobre Blanco Nido</h2>
   <p>
-    Creamos sábanas de buena calidad, pensadas para el uso diario.
-    Funcionales, suaves y duraderas, sin complicaciones.
+    En Blanco Nido creamos sábanas de buena calidad,
+    pensadas para el uso diario.
+    Buscamos comodidad real, suavidad y durabilidad,
+    sin complicaciones ni excesos.
   </p>
 </section>
 
-<section id="contacto" class="contacto">
-  <h2>Contacto</h2>
-  <p>Escríbenos si tienes dudas.</p>
+<section id="contacto" class="contacto bloque-suave">
+  <h2>¿Te interesa comprar?</h2>
+  <p>
+    Déjanos tus datos y te contactamos por
+    <strong>WhatsApp o Facebook</strong>.
+  </p>
 
   <form>
-    <input type="text" placeholder="Nombre">
-    <input type="email" placeholder="Correo">
-    <textarea placeholder="Mensaje"></textarea>
-    <button>Enviar</button>
+    <input type="text" placeholder="Nombre" required>
+    <input type="email" placeholder="Correo" required>
+    <input type="tel" placeholder="Teléfono / WhatsApp" required>
+
+    <select required>
+      <option value="">¿Qué tamaño te interesa?</option>
+      <option>Individual</option>
+      <option>Matrimonial</option>
+      <option>Queen</option>
+      <option>King</option>
+    </select>
+
+    <button type="submit">Enviar</button>
   </form>
 </section>
 
