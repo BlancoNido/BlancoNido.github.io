@@ -3,223 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sábanas Individuales | Blanco Nido</title>
+  <title>Sábanas Queen | Blanco Nido</title>
 
   <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #f4f2ef;
-      color: #2b2b2b;
-    }
+    body{margin:0;font-family:'Poppins',sans-serif;background:#f4f2ef;color:#2b2b2b}
+    header{text-align:center;padding:30px 20px;background:#ebe7e2}
+    header h1{margin:0;font-size:1.8rem;letter-spacing:1px}
+    .catalogo{max-width:520px;margin:auto;padding:20px;display:grid;gap:30px}
+    .producto{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.08);cursor:pointer}
+    .producto img{width:100%;height:340px;object-fit:cover}
+    .producto-info{padding:15px 18px}
+    .producto-info h3{margin:0;font-size:1.05rem;font-weight:500}
+    .producto-info p{margin-top:6px;font-size:.9rem;opacity:.75}
 
-    header {
-      text-align: center;
-      padding: 30px 20px;
-      background: #ebe7e2;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-      letter-spacing: 1px;
-    }
-
-    .catalogo {
-      max-width: 520px;
-      margin: auto;
-      padding: 20px;
-      display: grid;
-      gap: 30px;
-    }
-
-    .producto {
-      background: #ffffff;
-      border-radius: 22px;
-      overflow: hidden;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-      cursor: pointer;
-    }
-
-    .producto img {
-      width: 100%;
-      height: 340px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .producto-info {
-      padding: 15px 18px;
-    }
-
-    .producto-info h3 {
-      margin: 0;
-      font-size: 1.05rem;
-      font-weight: 500;
-    }
-
-    .producto-info p {
-      margin-top: 6px;
-      font-size: 0.9rem;
-      opacity: 0.75;
-    }
-
-    /* MODAL */
-
-    .modal {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.55);
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-    }
-
-    .modal.activo {
-      display: flex;
-    }
-
-    .modal-contenido {
-      background: #fff;
-      width: 92%;
-      max-width: 430px;
-      border-radius: 26px;
-      overflow: hidden;
-      max-height: 90vh;
-      overflow-y: auto;
-    }
-
-    .galeria {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-    }
-
-    .galeria img {
-      width: 100%;
-      height: 340px;
-      object-fit: cover;
-      scroll-snap-align: start;
-      flex-shrink: 0;
-    }
-
-    .detalle {
-      padding: 22px;
-    }
-
-    .detalle h4 {
-      margin: 0 0 10px;
-      font-size: 1.15rem;
-    }
-
-    .detalle p {
-      font-size: 0.95rem;
-      opacity: 0.8;
-      line-height: 1.5;
-    }
-
-    .colores {
-      display: flex;
-      gap: 12px;
-      margin: 18px 0;
-    }
-
-    .color {
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      border: 1px solid #bbb;
-    }
-
-    .precio {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin-top: 10px;
-    }
-
-    .cerrar {
-      text-align: center;
-      padding: 16px;
-      font-size: 0.9rem;
-      opacity: 0.6;
-      cursor: pointer;
-    }
+    .modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);justify-content:center;align-items:center;z-index:1000}
+    .modal.activo{display:flex}
+    .modal-contenido{background:#fff;width:92%;max-width:430px;border-radius:26px;overflow:hidden;max-height:90vh;overflow-y:auto}
+    .galeria{display:flex;overflow-x:auto;scroll-snap-type:x mandatory}
+    .galeria img{width:100%;height:340px;object-fit:cover;scroll-snap-align:start}
+    .detalle{padding:22px}
+    .detalle h4{margin:0 0 10px;font-size:1.15rem}
+    .detalle p{font-size:.95rem;opacity:.8;line-height:1.5}
+    .colores{display:flex;gap:12px;margin:18px 0}
+    .color{width:22px;height:22px;border-radius:50%;border:1px solid #bbb}
+    .precio{font-size:1.25rem;font-weight:600;margin-top:10px}
+    .cerrar{text-align:center;padding:16px;font-size:.9rem;opacity:.6;cursor:pointer}
   </style>
 </head>
-
 <body>
 
 <header>
-  <h1>Sábanas Individuales</h1>
+  <h1>Sábanas Queen</h1>
 </header>
 
 <section class="catalogo">
-
   <div class="producto" onclick="abrirModal()">
     <img src="https://via.placeholder.com/600x800">
     <div class="producto-info">
-      <h3>Sábana Individual Beige</h3>
-      <p>Suave, ligera y funcional</p>
+      <h3>Sábana Queen Beige</h3>
+      <p>Espacio y comodidad balanceada</p>
     </div>
   </div>
 
   <div class="producto" onclick="abrirModal()">
     <img src="https://via.placeholder.com/600x800">
     <div class="producto-info">
-      <h3>Sábana Individual Gris Claro</h3>
-      <p>Fresca y fácil de lavar</p>
+      <h3>Sábana Queen Gris Claro</h3>
+      <p>Fresca, práctica y duradera</p>
     </div>
   </div>
-
-  <div class="producto" onclick="abrirModal()">
-    <img src="https://via.placeholder.com/600x800">
-    <div class="producto-info">
-      <h3>Sábana Individual Hueso</h3>
-      <p>Confort diario y descanso suave</p>
-    </div>
-  </div>
-
 </section>
 
-<!-- MODAL -->
 <div class="modal" id="modal">
   <div class="modal-contenido">
-
     <div class="galeria">
       <img src="https://via.placeholder.com/600x800">
       <img src="https://via.placeholder.com/600x800">
       <img src="https://via.placeholder.com/600x800">
     </div>
-
     <div class="detalle">
-      <h4>Sábana Individual</h4>
-      <p>
-        Diseñada para el uso diario, cómoda al tacto y práctica.
-        Ideal para quienes buscan descanso sin complicaciones.
-      </p>
-
+      <h4>Sábana Queen</h4>
+      <p>Ideal para quienes buscan mayor amplitud sin perder suavidad. Fácil de lavar y mantener.</p>
       <div class="colores">
         <div class="color" style="background:#e7e1d8"></div>
         <div class="color" style="background:#cfcfcf"></div>
         <div class="color" style="background:#bcb6ae"></div>
       </div>
-
-      <div class="precio">$399 MXN</div>
+      <div class="precio">$599 MXN</div>
     </div>
-
     <div class="cerrar" onclick="cerrarModal()">Cerrar</div>
   </div>
 </div>
 
 <script>
-  function abrirModal() {
-    document.getElementById('modal').classList.add('activo');
-  }
-
-  function cerrarModal() {
-    document.getElementById('modal').classList.remove('activo');
-  }
+  function abrirModal(){document.getElementById('modal').classList.add('activo')}
+  function cerrarModal(){document.getElementById('modal').classList.remove('activo')}
 </script>
 
 </body>
