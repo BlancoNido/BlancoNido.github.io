@@ -15,20 +15,28 @@
 
     header {
       text-align: center;
-      padding: 30px 20px;
+      padding: 35px 20px;
       background: #ebe7e2;
     }
 
     header h1 {
       margin: 0;
-      font-size: 1.8rem;
-      letter-spacing: 1px;
+      font-size: 1.9rem;
+      font-weight: 500;
+    }
+
+    header a {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: .9rem;
+      text-decoration: none;
+      color: #6b6b6b;
     }
 
     .catalogo {
       max-width: 520px;
       margin: auto;
-      padding: 20px;
+      padding: 25px 20px 50px;
       display: grid;
       gap: 30px;
     }
@@ -45,11 +53,10 @@
       width: 100%;
       height: 340px;
       object-fit: cover;
-      display: block;
     }
 
     .producto-info {
-      padding: 15px 18px;
+      padding: 18px;
     }
 
     .producto-info h3 {
@@ -60,12 +67,11 @@
 
     .producto-info p {
       margin-top: 6px;
-      font-size: 0.9rem;
-      opacity: 0.75;
+      font-size: .9rem;
+      opacity: .75;
     }
 
     /* MODAL */
-
     .modal {
       display: none;
       position: fixed;
@@ -101,7 +107,6 @@
       height: 340px;
       object-fit: cover;
       scroll-snap-align: start;
-      flex-shrink: 0;
     }
 
     .detalle {
@@ -114,8 +119,8 @@
     }
 
     .detalle p {
-      font-size: 0.95rem;
-      opacity: 0.8;
+      font-size: .95rem;
+      opacity: .8;
       line-height: 1.5;
     }
 
@@ -141,8 +146,8 @@
     .cerrar {
       text-align: center;
       padding: 16px;
-      font-size: 0.9rem;
-      opacity: 0.6;
+      font-size: .9rem;
+      opacity: .6;
       cursor: pointer;
     }
   </style>
@@ -152,6 +157,7 @@
 
 <header>
   <h1>Sábanas Individuales</h1>
+  <a href="index.html">← Volver al inicio</a>
 </header>
 
 <section class="catalogo">
@@ -172,17 +178,8 @@
     </div>
   </div>
 
-  <div class="producto" onclick="abrirModal()">
-    <img src="https://via.placeholder.com/600x800">
-    <div class="producto-info">
-      <h3>Sábana Individual Hueso</h3>
-      <p>Confort diario y descanso suave</p>
-    </div>
-  </div>
-
 </section>
 
-<!-- MODAL -->
 <div class="modal" id="modal">
   <div class="modal-contenido">
 
@@ -194,10 +191,7 @@
 
     <div class="detalle">
       <h4>Sábana Individual</h4>
-      <p>
-        Diseñada para el uso diario, cómoda al tacto y práctica.
-        Ideal para quienes buscan descanso sin complicaciones.
-      </p>
+      <p>Diseñada para el uso diario, cómoda al tacto y práctica.</p>
 
       <div class="colores">
         <div class="color" style="background:#e7e1d8"></div>
@@ -213,14 +207,10 @@
 </div>
 
 <script>
-  function abrirModal() {
-    document.getElementById('modal').classList.add('activo');
-  }
-
-  function cerrarModal() {
-    document.getElementById('modal').classList.remove('activo');
-  }
+  function abrirModal(){document.getElementById('modal').classList.add('activo')}
+  function cerrarModal(){document.getElementById('modal').classList.remove('activo')}
 </script>
 
 </body>
 </html>
+
