@@ -1,27 +1,16 @@
-/* ===== PALETA ===== */
-:root {
-  --americano: #1E1D1D;
-  --brew: #303030;
-  --mocha: #5A4D41;
-  --chai: #7E6957;
-  --roast: #867C70;
-  --fondo: #f4f1ed;
-}
-
-/* ===== BASE ===== */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: var(--fondo);
-  color: var(--americano);
+  background: #F6F2ED;
+  color: #2B2B2B;
 }
 
-/* ===== HERO ===== */
+/* HERO */
 .hero {
   padding: 90px 20px;
   text-align: center;
-  background: linear-gradient(135deg, var(--americano), var(--brew));
-  color: #f4f1ed;
+  background: linear-gradient(180deg, #3A3A3A, #1F1F1F);
+  color: #F6F2ED;
 }
 
 .hero h1 {
@@ -34,26 +23,22 @@ body {
   opacity: 0.85;
 }
 
-/* ===== MENU ===== */
+/* MENÚ */
 .menu {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  padding: 20px;
-  background: var(--mocha);
+  gap: 35px;
+  padding: 18px;
+  background: #7B6A5A;
 }
 
 .menu a {
-  color: #f4f1ed;
   text-decoration: none;
+  color: #F6F2ED;
   font-weight: 500;
 }
 
-.menu a:hover {
-  opacity: 0.8;
-}
-
-/* ===== SECCIONES ===== */
+/* SECCIONES */
 section {
   padding: 80px 20px;
   max-width: 1100px;
@@ -67,7 +52,7 @@ section h2 {
   margin-bottom: 50px;
 }
 
-/* ===== CATALOGO ===== */
+/* CATEGORÍAS */
 .categorias {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -75,17 +60,17 @@ section h2 {
 }
 
 .categoria {
-  border-radius: 18px;
-  padding: 35px 25px;
+  border-radius: 20px;
+  padding: 35px;
   text-align: center;
   text-decoration: none;
-  color: var(--americano);
-  transition: transform 0.3s, box-shadow 0.3s;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .categoria:hover {
   transform: translateY(-6px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
 }
 
 .categoria h3 {
@@ -93,34 +78,27 @@ section h2 {
   margin-bottom: 10px;
 }
 
-/* 🎨 COLORES DIFERENTES POR TAMAÑO */
-.categoria.individual {
-  background: #ffffff;
+/* TONOS SUAVES */
+.categoria.clara {
+  background: #EFEAE4;
 }
 
-.categoria.matrimonial {
-  background: var(--chai);
-  color: #f4f1ed;
+.categoria.media {
+  background: #DED5CB;
 }
 
-.categoria.queen {
-  background: var(--roast);
+.categoria.oscura {
+  background: #CFC4B8;
 }
 
-.categoria.king {
-  background: var(--mocha);
-  color: #f4f1ed;
-}
-
-/* ===== SOBRE BLANCO NIDO ===== */
+/* BLOQUE NOSOTROS */
 .bloque-suave {
-  background: var(--roast);
-  border-radius: 28px;
-  padding: 70px 45px;
-  color: var(--americano);
+  background: #D8CFC2;
+  border-radius: 30px;
+  padding: 70px 50px;
 }
 
-/* ===== CONTACTO ===== */
+/* CONTACTO */
 .contacto {
   text-align: center;
 }
@@ -133,17 +111,16 @@ form {
   gap: 15px;
 }
 
-input, textarea {
+input, select {
   padding: 14px;
-  border-radius: 10px;
+  border-radius: 12px;
   border: none;
   font-size: 1rem;
-  background: #fff;
 }
 
 button {
-  background: var(--americano);
-  color: #f4f1ed;
+  background: #7B6A5A;
+  color: #F6F2ED;
   border: none;
   padding: 14px;
   border-radius: 30px;
@@ -151,15 +128,10 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  opacity: 0.9;
-}
-
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
-  background: var(--americano);
-  color: #f4f1ed;
   text-align: center;
-  padding: 25px;
+  padding: 30px;
   font-size: 0.85rem;
+  opacity: 0.7;
 }
