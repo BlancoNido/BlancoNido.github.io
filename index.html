@@ -1,90 +1,196 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Blanco Nido</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Blanco Nido</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CONEXIÓN AL CSS -->
-  <link rel="stylesheet" href="estilo.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <!-- TIPOGRAFÍA -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f4f1ed;
+  color: #2b2b2b;
+}
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #e6dfd6, #f4f1ed);
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  background: #ede8e2;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #3b3b3b;
+  font-weight: 500;
+}
+
+section {
+  padding: 70px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+section h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+}
+
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.categoria {
+  background: #eae6e1;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.categoria:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.categoria h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.bloque-suave {
+  background: #ede8e2;
+  border-radius: 25px;
+  padding: 60px 40px;
+}
+
+.contacto {
+  text-align: center;
+}
+
+form {
+  max-width: 450px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+}
+
+button {
+  background: #7b6f66;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+</style>
 </head>
 
 <body>
 
-  <!-- ENCABEZADO -->
-  <header class="hero">
-    <h1>Blanco Nido</h1>
-    <p class="subtitulo">
-      Sábanas cómodas, suaves y pensadas para descansar mejor.
-    </p>
-  </header>
+<header class="hero">
+  <h1>Blanco Nido</h1>
+  <p class="subtitulo">Sábanas cómodas, funcionales y pensadas para descansar mejor.</p>
+</header>
 
-  <!-- NAVEGACIÓN -->
-  <nav class="menu">
-    <a href="#catalogo">Catálogo</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+<nav class="menu">
+  <a href="#catalogo">Catálogo</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#contacto">Contacto</a>
+</nav>
 
-  <!-- CATÁLOGO -->
-  <section id="catalogo">
-    <h2>Lo que tenemos para ti</h2>
+<section id="catalogo">
+  <h2>Lo que tenemos para ti</h2>
 
-    <div class="categorias">
+  <div class="categorias">
+    <a href="individual.html" class="categoria">
+      <h3>Individual</h3>
+      <p>Prácticas, suaves y ligeras.</p>
+    </a>
 
-      <a href="individual.html" class="categoria">
-        <h3>Individual</h3>
-        <p>Perfectas para uso diario, suaves y ligeras.</p>
-      </a>
+    <a href="matrimonial.html" class="categoria">
+      <h3>Matrimonial</h3>
+      <p>Comodidad equilibrada.</p>
+    </a>
 
-      <a href="matrimonial.html" class="categoria">
-        <h3>Matrimonial</h3>
-        <p>Comodidad equilibrada para compartir.</p>
-      </a>
+    <a href="queen.html" class="categoria">
+      <h3>Queen</h3>
+      <p>Más espacio para descansar.</p>
+    </a>
 
-      <a href="queen.html" class="categoria">
-        <h3>Queen</h3>
-        <p>Más espacio, más descanso.</p>
-      </a>
+    <a href="king.html" class="categoria">
+      <h3>King</h3>
+      <p>Amplitud total.</p>
+    </a>
+  </div>
+</section>
 
-      <a href="king.html" class="categoria">
-        <h3>King</h3>
-        <p>Amplitud total para dormir sin límites.</p>
-      </a>
+<section id="nosotros" class="bloque-suave">
+  <h2>Sobre Blanco Nido</h2>
+  <p>
+    Creamos sábanas de buena calidad, pensadas para el uso diario.
+    Funcionales, suaves y duraderas, sin complicaciones.
+  </p>
+</section>
 
-    </div>
-  </section>
+<section id="contacto" class="contacto">
+  <h2>Contacto</h2>
+  <p>Escríbenos si tienes dudas.</p>
 
-  <!-- NOSOTROS -->
-  <section id="nosotros" class="bloque-suave">
-    <h2>Sobre Blanco Nido</h2>
-    <p>
-      En Blanco Nido creemos que descansar bien no debería ser complicado.
-      Creamos sábanas funcionales, suaves y duraderas, pensadas para acompañarte
-      cada noche con confort real y sin excesos.
-    </p>
-  </section>
+  <form>
+    <input type="text" placeholder="Nombre">
+    <input type="email" placeholder="Correo">
+    <textarea placeholder="Mensaje"></textarea>
+    <button>Enviar</button>
+  </form>
+</section>
 
-  <!-- CONTACTO -->
-  <section id="contacto" class="contacto">
-    <h2>¿Tienes dudas?</h2>
-    <p>Escríbenos y con gusto te ayudamos.</p>
-
-    <form>
-      <input type="text" placeholder="Nombre" required>
-      <input type="email" placeholder="Correo" required>
-      <textarea placeholder="Mensaje"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    © 2025 Blanco Nido · Todos los derechos reservados
-  </footer>
+<footer>
+  © 2025 Blanco Nido
+</footer>
 
 </body>
 </html>
